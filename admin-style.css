@@ -1,0 +1,92 @@
+/* Systeme.io Admin Styles */
+.systemeio-settings {
+    max-width: 1000px;
+    position: relative;
+}
+
+.systemeio-status-box {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+}
+
+.status-indicator {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+    background: #ccc;
+}
+
+.status-indicator.testing {
+    background: #ffba00;
+    animation: pulse 1.5s infinite;
+}
+
+.status-indicator.success {
+    background: #46b450;
+}
+
+.status-indicator.error {
+    background: #dc3232;
+}
+
+.status-message {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.systemeio-settings h2 {
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.systemeio-settings .systemeio-hook-mappings,
+.systemeio-settings .systemeio-hook-logs {
+    margin-top: 30px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+}
+
+.systemeio-settings table {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.systemeio-settings .systemeio-tags-select {
+    width: 100%;
+    min-height: 100px;
+}
+
+.systemeio-settings .form-table th {
+    width: 200px;
+}
+
+.systemeio-log-entry {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #f5f5f5;
+    border-left: 4px solid #ddd;
+}
+
+.systemeio-log-entry.error {
+    border-left-color: #dc3232;
+}
+
+.systemeio-log-entry.success {
+    border-left-color: #46b450;
+}
